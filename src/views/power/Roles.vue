@@ -87,7 +87,7 @@
       </el-dialog>
 
       <!-- 编辑角色的对话框 -->
-      <el-dialog @click="editFormClosed" title="修改角色" :visible.sync="editdialogVisible" width="50%">
+      <el-dialog @close="editFormClosed" title="修改角色" :visible.sync="editdialogVisible" width="50%">
         <el-form :model="editForm" ref="editFormRef" :rules="editFoormRules" label-width="70px">
           <el-form-item label="角色名称" prop="roleName">
             <el-input v-model="editForm.roleName"></el-input>
